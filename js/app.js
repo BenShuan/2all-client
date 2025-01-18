@@ -1,4 +1,4 @@
-const SERVER_URL = "https://localhost:7167/api/Colors";
+const SERVER_URL = "http://all-server-dev.eba-v2rg5e3t.us-east-1.elasticbeanstalk.com/api";
 
 // ------------------------------------------------------ ACTIONS -------------------------------------------------------------
 
