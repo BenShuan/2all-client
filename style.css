@@ -1,0 +1,117 @@
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section{
+  width: 90vw;
+  margin: 0 auto;
+}
+
+table{
+  background-color: azure;
+  margin:  2rem auto;
+  border: 2px solid slategrey ;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 40rem;
+}
+td{
+  padding:4px 8px ;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#data-table >table >:is(thead,tbody)  {
+overflow-y: scroll;
+}
+
+fieldset{
+  padding: 0;
+}
+
+th{
+  font-weight: bold;
+}
+
+input{
+
+  border-radius: 0.5rem;
+  border:2px solid #959DA5;
+
+}
+input:not([type="color"]){
+  padding: 8px 4px;
+}
+#new-color td{
+  display: grid;
+  grid-template-columns: 70% 20%;
+}
+
+
+/* CSS */
+.btn {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.btn:hover {
+  background-color: #e5e5e6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.btn:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+.btn:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.btn:focus {
+  outline: 1px transparent;
+}
+
+.btn:before {
+  display: none;
+}
+
+.btn:-webkit-details-marker {
+  display: none;
+}
+
+.btn-del{
+  background-color: rgb(214, 38, 38);
+  color: white;
+}
+
+.btn-del:is(:hover,:active){
+  color: rgb(214, 38, 38);
+}

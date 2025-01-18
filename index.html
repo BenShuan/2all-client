@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colors Table</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/style.css">
+
+  <script src="/js/ajaxCall.js"></script>
+  <script src="/js/app.js"></script>
+
+</head>
+
+<body dir="rtl">
+
+  <section id="data-table">
+    <table>
+      <thead >
+        <td>תיאור</td>
+        <td>מחיר</td>
+        <td>צבע</td>
+        <td>סדר</td>
+        <td>קיים במלאי?</td>
+        <td>פעולות</td>
+      </thead>
+      <tbody id="colors-list">
+         
+      </tbody>
+    </table>
+  </section>
+
+  <section id="color-form">
+    <form id="new-color">
+      <fieldset>
+        <legend>עריכה</legend>
+        <table>
+
+          <tr>
+            <td><label for="colorName">שם הצבע</label></td>
+            <td><input type="text" name="colorName">
+            <input type="color" name="colorCode"></td>
+          </tr>
+          <tr>
+            <td><label for="price">מחיר</label></td>
+            <td><input type="number" step="0.01" name="price"></td>
+          </tr>
+          <tr>
+            <td><label for="order">סדר הצגה</label></td>
+            <td><input type="text" name="order"></td>
+          </tr>
+          <tr>
+            <td><label for="isInStock">האם מאפיין זה במלאי</label></td>
+            <td><input type="checkbox" name="isInStock"></td>
+          </tr>
+         
+          <tr>
+            <td>
+
+              <input class="btn" id="save-btn" type="submit" value="שמור">
+              <input class="btn" id="update-btn" type="button" value="עדכן">
+
+            </td>
+          </tr>
+        </table>
+
+      </fieldset>
+    </form>
+  </section>
+
+ 
+</body>
+
+</html>
